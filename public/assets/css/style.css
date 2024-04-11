@@ -1,0 +1,437 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "muli", sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-menu {
+  width: 20vw;
+  height: 100vh;
+  background-color: #363740;
+}
+
+.overview-menu {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F7F8FC;
+  overflow-x: hidden;
+}
+
+.overview {
+  width: 100vw;
+  height: 5%;
+  display: flex;
+  flex-direction: row;
+  margin: 3%;
+}
+.overview h4 {
+  color: #252733;
+  font-weight: 700;
+}
+.overview .col-7 {
+  padding-left: 50%;
+  padding-top: 0.2%;
+}
+.overview .col-7 img {
+  padding: 5%;
+}
+.overview .col-5 {
+  display: flex;
+  flex-direction: row;
+  margin-left: -2%;
+}
+.overview .col-5 p {
+  padding-left: 3%;
+  margin: 8px;
+}
+
+.overview-tabs {
+  width: 100%;
+  height: 15%;
+}
+.overview-tabs .row {
+  width: auto;
+  height: 100%;
+  text-align: center;
+  margin: 2% 2%;
+}
+.overview-tabs .row .col {
+  background-color: white;
+  padding: 1%;
+  margin: 1%;
+  border: solid 1px;
+  border-color: #DFE0EB;
+  border-radius: 15px;
+  transition: 0.5s ease-in-out;
+}
+.overview-tabs .row .col h6 {
+  padding: 1%;
+  margin: 1%;
+  color: #9FA2B4;
+  font-weight: 700;
+  transition: 0.5s ease-in-out;
+}
+.overview-tabs .row .col p {
+  padding: 1%;
+  margin: 1%;
+  color: #252733;
+  font-weight: 700;
+  font-size: 40pt;
+  transition: 0.5s ease-in-out;
+}
+.overview-tabs .row :hover {
+  border-color: #3751FF;
+  transition: 0.5s ease-in-out;
+}
+.overview-tabs .row :hover h6 {
+  color: #3751FF;
+  transition: 0.5s ease-in-out;
+}
+.overview-tabs .row :hover p {
+  color: #3751FF;
+  transition: 0.5s ease-in-out;
+}
+
+.trending-menu {
+  width: 94%;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 7% 3%;
+  border: solid 1px;
+  border-color: #DFE0EB;
+  border-radius: 15px;
+  transition: 0.5s ease-in-out;
+}
+.trending-menu .trending-graph {
+  text-align: left;
+  width: 100%;
+  height: 100%;
+  border-right: solid 1px #DFE0EB;
+  padding: 3%;
+}
+.trending-menu .trending-graph h5 {
+  color: #252733;
+  font-weight: 700;
+}
+.trending-menu .trending-graph .trending-image {
+  margin-top: 10%;
+  scale: 0.95;
+}
+.trending-menu .trending-graph .today-trends {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.trending-menu .trending-graph .today-trends .col3 {
+  width: 90%;
+  height: 20%;
+}
+.trending-menu .trending-graph .today-trends .col3 p {
+  font-size: small;
+  color: #9FA2B4;
+}
+.trending-menu .trending-graph .today-trends .col3 img {
+  transform: scale(1);
+  padding-left: 45%;
+}
+.trending-menu .trending-stats {
+  width: 50%;
+  height: 100%;
+}
+.trending-menu .trending-stats :not(:last-child) {
+  border-bottom: solid 1px #DFE0EB;
+}
+.trending-menu .trending-stats .col2 {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  padding: 5%;
+  background-color: white;
+}
+.trending-menu .trending-stats .col2 h6 {
+  color: #9FA2B4;
+  font-weight: 700;
+  border-bottom: none;
+}
+.trending-menu .trending-stats .col2 p {
+  color: #252733;
+  font-weight: 700;
+  font-size: 24pt;
+}
+
+.bottom-graphs {
+  width: 94%;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: -3% 3% 2%;
+}
+.bottom-graphs .firstbottomgraph {
+  width: 48%;
+  height: 50vh;
+  background-color: white;
+  border: solid 1px;
+  border-color: #DFE0EB;
+  border-radius: 15px;
+  transition: 0.5s ease-in-out;
+}
+.bottom-graphs .firstbottomgraph .header1 {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  padding: 6% 5% 0%;
+}
+.bottom-graphs .firstbottomgraph .header1 h6 {
+  width: 50%;
+  height: 20%;
+  color: #252733;
+  font-weight: 700;
+}
+.bottom-graphs .firstbottomgraph .header1 p {
+  width: 50%;
+  height: 20%;
+  text-align: right;
+  color: #3751FF;
+}
+.bottom-graphs .firstbottomgraph p {
+  font-size: smaller;
+  width: 100%;
+  padding: 0% 5% 1%;
+}
+.bottom-graphs .firstbottomgraph p span {
+  color: #9FA2B4;
+  font-weight: 700;
+}
+.bottom-graphs .firstbottomgraph .row.row-cols-2 {
+  width: 102.5%;
+  height: 75%;
+  padding-left: 2%;
+}
+.bottom-graphs .firstbottomgraph .row.row-cols-2 .col {
+  border-top: solid 1px #DFE0EB;
+  padding-top: 3%;
+}
+.bottom-graphs .firstbottomgraph .row.row-cols-2 :first-child {
+  border-top: solid 1px white;
+}
+.bottom-graphs .firstbottomgraph .row.row-cols-2 :nth-child(2) {
+  border-top: solid 1px white;
+}
+.bottom-graphs .firstbottomgraph .row.row-cols-2 :nth-child(even) {
+  text-align: right;
+  color: #9FA2B4;
+  font-weight: 700;
+}
+.bottom-graphs .firstbottomgraph .row.row-cols-2 :nth-child(odd) {
+  font-weight: 700;
+}
+.bottom-graphs .secondbottomgraph {
+  width: 48%;
+  height: 50vh;
+  background-color: white;
+  border: solid 1px;
+  border-color: #DFE0EB;
+  border-radius: 15px;
+  transition: 0.5s ease-in-out;
+}
+.bottom-graphs .secondbottomgraph .header2 {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  padding: 6% 5% 0%;
+}
+.bottom-graphs .secondbottomgraph .header2 h6 {
+  width: 50%;
+  height: 20%;
+  color: #252733;
+  font-weight: 700;
+}
+.bottom-graphs .secondbottomgraph .header2 h7 {
+  width: 50%;
+  height: 20%;
+  text-align: right;
+  color: #3751FF;
+}
+.bottom-graphs .secondbottomgraph p {
+  font-size: smaller;
+  width: 100%;
+  padding: 0% 5% 1%;
+  color: #9FA2B4;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 {
+  width: 102.5%;
+  height: 75%;
+  padding-left: 2%;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 .col {
+  border-top: solid 1px #DFE0EB;
+  padding-top: 3%;
+  font-weight: 600;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 :first-child {
+  color: #252733;
+  border-top: none;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 :first-child span {
+  padding: 1%;
+  color: #9FA2B4;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 :nth-child(2) {
+  border-top: none;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 :nth-child(even) {
+  text-align: right;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 :nth-child(4) button {
+  width: 30%;
+  height: 60%;
+  background-color: #FEC400;
+  border: none;
+  border-radius: 8px;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 :nth-child(4) span {
+  font-size: smaller;
+  font-weight: 600;
+  padding: 1%;
+  color: white;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 :nth-child(6) button {
+  width: 25%;
+  height: 60%;
+  background-color: #29CC97;
+  border: none;
+  border-radius: 8px;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 :nth-child(6) span {
+  font-size: smaller;
+  font-weight: 600;
+  padding: 1%;
+  color: white;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 :nth-child(8) button {
+  width: 40%;
+  height: 60%;
+  background-color: #F0F1F7;
+  border: none;
+  border-radius: 8px;
+}
+.bottom-graphs .secondbottomgraph .row.row-cols-2 :nth-child(8) span {
+  font-size: smaller;
+  font-weight: 600;
+  padding: 1%;
+  color: #9FA2B4;
+}
+
+.dashboard-menu {
+  width: 15vw;
+  height: 100vh;
+  background-color: #363740;
+}
+
+.logo {
+  padding: 25px 10px 30px 25px;
+  display: flex;
+}
+.logo h1 {
+  font-size: 19px;
+  color: #A4a6b3;
+  padding-top: 6px;
+  padding-left: 6px;
+}
+
+h4 {
+  color: #252733;
+  font-weight: 700;
+  margin: 2% 3%;
+}
+
+.nav-item a {
+  color: #A4A6B3;
+  padding-left: 2px;
+  display: flex;
+  padding-left: 25px;
+  padding-top: 18px;
+  height: 55px;
+}
+
+.nav-item a h1 {
+  font-size: 16px;
+  padding-left: 10px;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: white 2px solid;
+  height: 55px;
+}
+
+.nav-item:nth-child(6):hover {
+  margin-bottom: 11.3%;
+}
+
+.nav-item a:hover {
+  color: #DDE2FF;
+}
+
+svg:hover {
+  color: #DDE2FF;
+}
+
+.overview-tabs {
+  width: 100%;
+  height: 15%;
+}
+
+.overview-tabs .row {
+  width: auto;
+  height: 100%;
+  text-align: center;
+  margin: 2% 2%;
+}
+
+.overview-tabs .row .col {
+  background-color: white;
+  padding: 1%;
+  margin: 1%;
+  border: solid 1px;
+  border-color: #DFE0EB;
+  border-radius: 15px;
+}
+
+.overview-tabs .row .col h6 {
+  padding: 1%;
+  margin: 1%;
+  color: #9FA2B4;
+  font-weight: 700;
+}
+
+.overview-tabs .row .col p {
+  padding: 1%;
+  margin: 1%;
+  color: #252733;
+  font-weight: 700;
+  font-size: 40pt;
+}
+
+.overview-tabs .row :hover {
+  border-color: #3751FF;
+  transition: 0.5s;
+}
+
+.overview-tabs .row :hover h6 {
+  color: #3751FF;
+  transition: 0.5s;
+}
+
+.overview-tabs .row :hover p {
+  color: #3751FF;
+  transition: 0.5s;
+}

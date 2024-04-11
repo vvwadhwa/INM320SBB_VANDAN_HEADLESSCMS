@@ -1,0 +1,65 @@
+{
+    "overview": [
+        {
+            "text": "Unresolved",
+            "number": 60
+        },
+        {
+            "text": "Overdue",
+            "number": 16
+        },
+        {
+            "text": "Open",
+            "number": 43
+        },
+        {
+            "text": "On Hold",
+            "number": 64
+        }
+    ],
+    "graphdata": [
+        {
+            "text": "Resolved",
+            "number": 449
+        },
+        {
+            "text": "Received",
+            "number": 426
+        },
+        {
+            "text": "Average First Response Time",
+            "number": "33m"
+        },
+        {
+            "text": "On Hold",
+            "number": "3h 8m"
+        },
+        {
+            "text": "Resolution within SLA",
+            "number": "98%"
+        }
+    ],
+    "botomgraph1": {
+        "heading": "Unresolved tickets",
+        "subheading": "Support",
+        "bluetext": "View details",
+        "data": [
+            {
+                "text": "Waiting for Feature Request",
+                "number": 4238
+            },
+            {
+                "text": "Awaiting Customer Response",
+                "number": 1005
+            },
+            {
+                "text": "Awaiting Developer Fix",
+                "number": 914
+            },
+            {
+                "text": "Pending",
+                "number": 218
+            }
+        ]
+    }
+}
