@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const overviewCardsWrapper = document.getElementById('overviewContainer');
-    const graphDataWrapper = document.getElementById('graphDataWrapper');
-    const statusInfoWrapper = document.getElementById('statusInfoWrapper');
+    const overviewCardsWrapper = document.getElementById('overviewData');
+    const graphDataWrapper = document.getElementById('graphInfo');
+    const statusInfoWrapper = document.getElementById('bottomGraphData');
 
     async function fetchJSON() {
         try {
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             webData.graphdata.forEach((item) => {
-                graphDataWrapper.innerHTML += `
+                graphInfo.innerHTML += `
                     <div class="col2"> 
                         <h6>${item.text}</h6>
                         <p>${item.number}</p>
@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             const bottomgraphInfo = webData.botomgraph1;
-            statusInfoWrapper.innerHTML += `
+            bottomGraphData.innerHTML += `
                      <div class="header1">
                         <h6>${bottomgraphInfo.heading}</h6>
                         <p>${bottomgraphInfo.bluetext}</p>
                     </div>
                     `
-            statusInfoWrapper.innerHTML += `<p>Group: <span>${bottomgraphInfo.subheading}</span></p>`
+            bottomGraphData.innerHTML += `<p>Group: <span>${bottomgraphInfo.subheading}</span></p>`
             const tableWrapper = document.createElement('div');
             tableWrapper.classList.add('row', 'row-cols-2')
 
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 tableWrapper.innerHTML += `<div class="col">${item.text}</div>
                     <div class="col">${item.number}</div>`
             })
-            statusInfoWrapper.appendChild(tableWrapper);
+            bottomGraphData.appendChild(tableWrapper);
         }
         catch (err) {
             console.log('Error:', err);
